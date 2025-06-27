@@ -200,8 +200,145 @@
     max-width: 100%;
   }
 }
-/* fuerza el fondo transparente si tiene la clase especial */
+
 #navbar.siempre-transparente {
   background-color: transparent !important;
   box-shadow: none !important;
+}
+
+/* MENU-TIENDA */
+.hero-fixed {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 100px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.hero-content {
+  padding: 20px;
+  margin-left: 150px
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.hero-content span {
+  font-weight: 700;
+  font-size: 4rem;
+  display: block;
+}
+
+.hero-content p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.galeria-dulces {
+  padding: 50px 20px;
+  background-color: #fffafc;
+}
+
+.galeria-masonry {
+  column-count: 2;
+  column-gap: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.zoom-container {
+  overflow: hidden;
+  margin-bottom: 20px;
+  break-inside: avoid;
+  position: relative;
+}
+
+.zoom-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+  will-change: transform;
+}
+
+.zoom-container:hover img {
+  transform: scale(1.1); 
+}
+
+/* Estilo general del texto superpuesto */
+.texto-imagen {
+  position: absolute;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 12px;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Posiciones específicas */
+.esquina-inferior {
+  bottom: 80px;
+  left: 25px;
+}
+
+.esquina-superior {
+  top: 20px;
+  right: 25px;
+}
+
+.texto-grande{
+font-weight: 700;
+  font-size: 42px;
+   padding: 5px 12px;
+  z-index: 2;
+   position: absolute;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  bottom: 10px;
+  left: 10px;
+}
+
+@media (max-width: 768px) {
+  .hero-fixed {
+    height: auto;
+    padding: 60px 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding: 20px;
+    margin-left: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content span {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive: 1 columna en pantallas chicas */
+@media (max-width: 768px) {
+  .galeria-masonry {
+    column-count: 1;
+  }
 }
