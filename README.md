@@ -8,4 +8,6 @@ Incluye:
 - Íconos y fuentes personalizadas
 - Clonado visual del diseño base
 
+## Vista previa del sitio
 
+<img src="img/candy-readme.png" alt="Vista previa del sitio" width="600">
