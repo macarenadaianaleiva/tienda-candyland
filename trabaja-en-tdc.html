@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TRABAJA EN TDC - Candyland</title>
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
@@ -13,10 +14,7 @@
 <body>
 
 <header>
-  
-</header>
-
-    <!-- Menú de navegación oculto al principio -->
+      <!-- Menú de navegación oculto al principio -->
   <nav id="navbar" class="navbar visible">
      <a href="./index.html" class="logo-link"><img src="img/logo.png" alt="Logo Candyland" class="logo-nav" /></a>
     <button class="hamburger" aria-label="Menú">
@@ -32,6 +30,73 @@
       <li><a href="./contacto.html">CONTACTO</a></li>
     </ul>
   </nav>
+</header>
+
+<div class="trabaja-container">
+  <div class="trabaja-encabezado">
+  <p class="subtitulo">SUMATE A NUESTRO EQUIPO</p>
+  <h2 class="titulo">TRABAJÁ EN CANDYLAND</h2>
+  <div class="separador"></div>
+  <p class="descripcion">Si querés formar parte de Tienda de Dulces enviános tus datos y adjuntá tu CV</p>
+</div>
+
+<form class="form-trabajo">
+  <div class="form-row">
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" required />
+    </div>
+    <div class="form-group">
+      <label for="apellido">Apellido</label>
+      <input id="apellido" type="text" required />
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input id="email" type="email" required />
+    </div>
+    <div class="form-group">
+      <label for="telefono">Teléfono</label>
+      <input id="telefono" type="tel" required />
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="puesto">¿Cuál es tu puesto de trabajo?</label>
+      <input id="puesto" type="text" />
+    </div>
+    <div class="form-group">
+      <label for="sucursal">¿Cuál es tu sucursal de preferencia?</label>
+      <select id="sucursal">
+        <option disabled selected>Seleccione una sucursal</option>
+        <option>Sucursal 1</option>
+        <option>Sucursal 2</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group full">
+      <label for="cv">Adjuntar CV</label>
+      <input id="cv" type="file" />
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group full">
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" rows="6"></textarea>
+    </div>
+  </div>
+
+  <button type="submit" class="btn-enviar">ENVIAR</button>
+</form>
+</div>
+
+
 
   <footer>
     <div class="footer-logo">
