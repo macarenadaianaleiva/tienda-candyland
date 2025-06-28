@@ -10,4 +10,4 @@ Incluye:
 
 ## Vista previa del sitio
 
-<img src="img/candy-readme.png" alt="Vista previa del sitio" width="600">
+<img src="img/candyland-preview.png" alt="Vista previa del sitio" width="900">

@@ -1,8 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const navbar = document.getElementById("navbar");
-window.addEventListener("scroll", () => {
-  navbar.classList.add("visible");
-});
+const navbar = document.getElementById("navbar");
+
+  if (document.body.classList.contains("transparente")) {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Ejecuta al cargar
+  }
   const slides = document.querySelectorAll(".slide");
   const dots = document.querySelectorAll(".dot");
   const arrowLeft = document.querySelector(".arrow.left");
@@ -145,4 +155,5 @@ document.querySelectorAll(".nav-links a").forEach(link => {
   link.addEventListener("click", () => {
     document.querySelector(".nav-links").classList.remove("active");
   });
+  
 });
